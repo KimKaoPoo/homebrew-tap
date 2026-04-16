@@ -5,21 +5,21 @@
 class Tm1cli < Formula
   desc "CLI tool for IBM TM1/Planning Analytics REST API"
   homepage "https://github.com/KimKaoPoo/tm1cli"
-  version "0.2.0"
+  version "0.3.0"
   license "MIT"
 
   on_macos do
     if Hardware::CPU.intel?
-      url "https://github.com/KimKaoPoo/tm1cli/releases/download/v0.2.0/tm1cli_0.2.0_darwin_amd64.tar.gz"
-      sha256 "b1027cdf65e58bd1fe248156e33e1477629c5ed92640327068c91c19f6ddbf82"
+      url "https://github.com/KimKaoPoo/tm1cli/releases/download/v0.3.0/tm1cli_0.3.0_darwin_amd64.tar.gz"
+      sha256 "64053e44e5b54032411b9ef8d615c7409d09a098d2677ac4f0c2f6d636189e26"
 
       define_method(:install) do
         bin.install "tm1cli"
       end
     end
     if Hardware::CPU.arm?
-      url "https://github.com/KimKaoPoo/tm1cli/releases/download/v0.2.0/tm1cli_0.2.0_darwin_arm64.tar.gz"
-      sha256 "1fb473deb91fc4946c04b8b11d99632b4719dabb9e6d8513dcd27076758b5274"
+      url "https://github.com/KimKaoPoo/tm1cli/releases/download/v0.3.0/tm1cli_0.3.0_darwin_arm64.tar.gz"
+      sha256 "44b33dd49ae22f7563d7c09436d67c0ec54debe5f9069bcaca86a7f93b960bf9"
 
       define_method(:install) do
         bin.install "tm1cli"
@@ -29,15 +29,15 @@ class Tm1cli < Formula
 
   on_linux do
     if Hardware::CPU.intel? && Hardware::CPU.is_64_bit?
-      url "https://github.com/KimKaoPoo/tm1cli/releases/download/v0.2.0/tm1cli_0.2.0_linux_amd64.tar.gz"
-      sha256 "51e1be7d5ef6f1c003011f3770c3ed2abdb78f8f69271ce09f6a98189ef4b187"
+      url "https://github.com/KimKaoPoo/tm1cli/releases/download/v0.3.0/tm1cli_0.3.0_linux_amd64.tar.gz"
+      sha256 "3ae4559a055a496faf3be892df31ff62510885e21f5b44a93c9b6bebbf1ee3e4"
       define_method(:install) do
         bin.install "tm1cli"
       end
     end
     if Hardware::CPU.arm? && Hardware::CPU.is_64_bit?
-      url "https://github.com/KimKaoPoo/tm1cli/releases/download/v0.2.0/tm1cli_0.2.0_linux_arm64.tar.gz"
-      sha256 "7cdc4345458103999d700089c742e268fdf18bd1fe3a76e095e1e65d5eae57cd"
+      url "https://github.com/KimKaoPoo/tm1cli/releases/download/v0.3.0/tm1cli_0.3.0_linux_arm64.tar.gz"
+      sha256 "77ce427eb66b7f9829e159dd3c5a726a9e7abea04b8c7a02e640fba35ef62370"
       define_method(:install) do
         bin.install "tm1cli"
       end
